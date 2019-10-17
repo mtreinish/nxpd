@@ -19,7 +19,7 @@ except ImportError:
 def main():
 
     install_requires = [
-        'networkx >= 1.6',
+        'networkx >= 2.0',
         'pyparsing >= 2.0.1',
     ]
 

@@ -246,7 +246,7 @@ def to_pydot(G, raise_exceptions=True):
     else:
         graph_type = 'graph'
 
-    strict = G.number_of_selfloops() == 0 and not G.is_multigraph()
+    strict = nx.number_of_selfloops(G) == 0 and not G.is_multigraph()
 
     # Create the Pydot graph.
     name = G.graph.get('name')
